@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:TabbedPageMinimalBugExample.Views"
+       Title="TabbedPageMinimalBugExample"
+       x:Class="TabbedPageMinimalBugExample.AppShell">
+
+    <!--
+        The overall app visual hierarchy is defined here, along with navigation.
+    
+        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
+    -->
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <TabBar>
+        <ShellContent Title="About1" Icon="icon_about.png" Route="AboutPage1" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse1" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About2" Icon="icon_about.png" Route="AboutPage2" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse2" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About3" Icon="icon_about.png" Route="AboutPage3" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse3" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About4" Icon="icon_about.png" Route="AboutPage4" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse4" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About5" Icon="icon_about.png" Route="AboutPage5" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse5" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About6" Icon="icon_about.png" Route="AboutPage6" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse6" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About7" Icon="icon_about.png" Route="AboutPage7" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse7" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About8" Icon="icon_about.png" Route="AboutPage8" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse8" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+    </TabBar>
+
+    <!--
+        If you would like to navigate to this content you can do so by calling
+        await Shell.Current.GoToAsync("//LoginPage");
+    -->
+    <TabBar>
+        <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
+    </TabBar>
+
+
+</Shell>
