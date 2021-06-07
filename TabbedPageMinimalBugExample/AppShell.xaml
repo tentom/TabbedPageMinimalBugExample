@@ -46,6 +46,20 @@
         <ShellContent Title="Browse7" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
         <ShellContent Title="About8" Icon="icon_about.png" Route="AboutPage8" ContentTemplate="{DataTemplate local:AboutPage}" />
         <ShellContent Title="Browse8" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About9" Icon="icon_about.png" Route="AboutPage9" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse9" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About10" Icon="icon_about.png" Route="AboutPage10" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse10" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About11" Icon="icon_about.png" Route="AboutPage11" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse11" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About12" Icon="icon_about.png" Route="AboutPage12" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse12" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About13" Icon="icon_about.png" Route="AboutPage13" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse13" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About14" Icon="icon_about.png" Route="AboutPage14" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse14" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About15" Icon="icon_about.png" Route="AboutPage15" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Browse15" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </TabBar>
 
     <!--
